@@ -17,10 +17,6 @@ public class ExternalRequest implements Comparable<ExternalRequest> {
         this.ts = System.nanoTime();
     }
 
-    public ExternalRequest(int floor, Direction dir) {
-        this(floor, dir, false, 1);
-    }
-
     public int getFloor() { return floor; }
     public Direction getDirection() { return dir; }
     public boolean isPriority() { return priority; }
